@@ -20,8 +20,8 @@
                 註冊帳號 : <input type="text" name="registerAccountName" /><p/> 
                 註冊密碼 : <input type="text" name="registerPassword" /><p/> 
                 密碼確認 : <input type="text" name="registerPasswordComfirm" /><p/>
-                <input type="text" name="registerAuthorCode" placehode="請輸入授權碼"/>
-                <img src="" valign="middle"><p/>
+                圖形認證 : <input type="text" name="registerAuthorCode"/>
+                <img src="/JavaWebSampleProject_MembershipSystem/contoller/AuthorCodeServlet" valign="middle"><p/>
                 <button type="submit" class="pure-button pure-button-primary">註冊</button> 
                 <button type="reset" class="pure-button pure-button-primary">重填</button> 
             </fieldset>

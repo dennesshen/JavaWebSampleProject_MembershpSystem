@@ -28,7 +28,7 @@ and open the template in the editor.
                 <button type="reset" class="pure-button pure-button-primary">重填</button>
                 <button type="button" 
                              class="pure-button pure-button-primary"
-                             onclick="location.href='/JavaWebSampleProject_MembershipSystem/forms/registerPage.jsp' " >新註冊</button>
+                             onclick="location.href='/JavaWebSampleProject_MembershipSystem/forms/registerPage.jsp' " >新註冊</JavaWebSampleProject_MembershipSystem/forms//button>
 
             </fieldset>
         </form>
