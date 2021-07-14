@@ -2,6 +2,8 @@ package com.mycompany.javawebsampleproject_membershipsystem.filter;
 
 import com.mycompany.javawebsampleproject_membershipsystem.service.DataManipulateService;
 import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.servlet.FilterChain;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebFilter;
@@ -24,8 +26,13 @@ public class LoginFilter extends HttpFilter {
         String password = req.getParameter("password");
         String enterAuthorCode = req.getParameter("enterAuthorCode");
         String authorCode = session.getAttribute("authorCode").toString();
-        boolean check = new DataManipulateService().checkPassword(accountName, password);
-        
+        boolean check = false;
+        try {
+            check = new DataManipulateService().checkPassword(accountName, password);
+        } catch (Exception ex) {
+            System.out.println(ex);
+        }
+
         if (!enterAuthorCode.equals(authorCode)) {
             res.setContentType("text/html;charset=UTF-8");
             res.getWriter().print("認證碼錯誤!");

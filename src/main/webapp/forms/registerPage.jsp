@@ -20,6 +20,8 @@
                 註冊帳號 : <input type="text" name="registerAccountName" /><p/> 
                 註冊密碼 : <input type="text" name="registerPassword" /><p/> 
                 密碼確認 : <input type="text" name="registerPasswordComfirm" /><p/>
+                會員姓名 : <input type="text" name="memberName" /><p/>
+                會員生日 : <input type="text" name="memberBirth" /><p/>
                 圖形認證 : <input type="text" name="registerAuthorCode"/>
                 <img src="/JavaWebSampleProject_MembershipSystem/contoller/AuthorCodeServlet" valign="middle"><p/>
                 <button type="submit" class="pure-button pure-button-primary">註冊</button> 
